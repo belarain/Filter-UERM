@@ -3,11 +3,11 @@
 void OnInitialize()
 {
     RegisterCallback(PlayerChat_c, OnChat);
-    TextFilter::Register();
+    ChatFilter::Register();
 
     print(" ");
 	print("------------------------------------------------------------------");
-	print("[SERVER] Text Filter has been loaded successfully");
+	print("[SERVER] Chat Filter has been loaded successfully");
 	print("[SERVER] By BelaRain");
 	print("[SERVER] Repository - https://github.com/belarain/chat-filter-UERM");
 	print("------------------------------------------------------------------");
@@ -17,11 +17,11 @@ void OnInitialize()
 
 bool OnChat(Player player, string message)
 {
-    if (TextFilter::Contains(message)) { chat.SendPlayer(player, "[SERVER] No swear!"); return false; }
+    if (ChatFilter::Contains(message)) { chat.SendPlayer(player, "[SERVER] No swear!"); return false; }
     return true;
 }
 
-namespace TextFilter
+namespace ChatFilter
 {
     string[] Words;
 
@@ -32,15 +32,9 @@ namespace TextFilter
         Add({"motherfucker", "m0therfucker", "motherfuckers", "m0therfuckers"});
         Add({"retard", "retards"});
         Add({"bastard", "bastards"});
-        Add("kurwa"); // Bobr kurwa
         Add("moron"); // wattasigma
         Add({"idiot", "1d1ot", "1diot", "id1ot", "idiots", "1d1ots", "1diots", "id1ots"});
         Add({"bitch", "b1tch", "b1t4", "bit4", "bitches", "b1tches", "b1t4es", "bit4es"});
-    }
-
-    void Add(string word)
-    {
-        Words.push_back(word.lower());
     }
 
     void Add(string[] word)
@@ -48,10 +42,15 @@ namespace TextFilter
         for(int i = 0; i < word.size(); i++) Words.push_back(word[i].lower());
     }
 
-    bool Contains(string input) 
+    void Add(string word)
+    {
+        Words.push_back(word.lower());
+    }
+
+    bool Contains(string msg) 
     {
         for(int i = 0; i < Words.size(); i++) {
-            if(input.lower().findFirst(Words[i]) >= 0) return true;
+            if(msg.lower().findFirst(Words[i]) >= 0) return true;
         }
 
         return false;

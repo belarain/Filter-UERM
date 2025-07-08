@@ -1,2 +1,2 @@
-# text-filter-UERM
-Text Filter for SCP: CB Multiplayer Reborn game servers. Can be used for Breach Mode and other modes.
+# Text Filter
+You can moderate your game chat with the script text filter. Script won't miss "bad" words. Thanks @kimilsungthelast for idea.

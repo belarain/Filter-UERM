@@ -27,14 +27,14 @@ namespace ChatFilter
 
     void Register()
     {
-        Add({"nigga", "n1gga", "negga", "nigger", "n1gger", "niggers", "n1ggers", "niggaz", "n1ggaz"});
-        Add({"asshole", "assh0le", "assholes", "assh0les"});
-        Add({"motherfucker", "m0therfucker", "motherfuckers", "m0therfuckers"});
-        Add({"retard", "retards"});
-        Add({"bastard", "bastards"});
+        Add({"nigga", "n1gga", "negga", "nigge", "n1gge"});
+        Add({"asshole", "assh0le"});
+        Add({"motherfuck", "m0therfuck"});
+        Add("retard");
+        Add("bastard");
         Add("moron"); // wattasigma
-        Add({"idiot", "1d1ot", "1diot", "id1ot", "idiots", "1d1ots", "1diots", "id1ots"});
-        Add({"bitch", "b1tch", "b1t4", "bit4", "bitches", "b1tches", "b1t4es", "bit4es"});
+        Add({"idiot", "1d1ot", "1diot", "id1ot"});
+        Add({"bitch", "b1tch", "b1t4", "bit4"});
     }
 
     void Add(string[] word)

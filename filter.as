@@ -8,7 +8,7 @@ void OnInitialize()
 
     print(" ");
     print("-------------------------------------------------------------");
-    print("[SERVER] Chat Filter has been loaded successfully");
+    print("[SERVER] UERM Filter has been loaded successfully");
     print("[SERVER] By BelaRain");
     print("[SERVER] Repository - https://github.com/belarain/Filter-UERM");
     print("-------------------------------------------------------------");

@@ -7,11 +7,11 @@ void OnInitialize()
     Filter::Register();
 
     print(" ");
-    print("------------------------------------------------------------------");
+    print("-------------------------------------------------------------");
     print("[SERVER] Chat Filter has been loaded successfully");
     print("[SERVER] By BelaRain");
-    print("[SERVER] Repository - https://github.com/belarain/chat-filter-UERM");
-    print("------------------------------------------------------------------");
+    print("[SERVER] Repository - https://github.com/belarain/Filter-UERM");
+    print("-------------------------------------------------------------");
     print(" ");
 
 }

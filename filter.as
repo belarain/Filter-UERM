@@ -43,26 +43,24 @@ namespace Filter
         Add("retard");
         Add("bastard");
         Add("moron"); // wattasigma
-        Add({"nazi", "hitler", "gitler", "reich");
+        Add({"nazi", "hitler", "gitler", "reich"});
         Add({"idiot", "1d1ot", "1diot", "id1ot"});
         Add({"bitch", "b1tch", "b1t4", "bit4"});
 
         // Russian
         Add({"долбоеб", "далбаеб", "долбаеб", "dolboeb", "dolbaeb", "dalbaeb"});
         Add("конч");
-        Add("даун", "daun");
+        Add({"даун", "daun"});
         Add({"педик", "педофил", "педек"});
         Add({"гомо", "гомик"});
         Add({"мудак", "мудила", "мудень", "мудачье", "mudak", "mudila"});
         Add({"пидор", "pidor"});
         Add({"ебанат", "еблан"});
-        Add({"нига", "нигга", "чёрномазы", "чёрножоп"})
+        Add({"нига", "нигга", "чёрномазы", "чёрножоп"});
         Add({"хуепутало", "хуепл"});
-        Add({"жид", "хохл", "хохол", "hohol", "hohl", "jid", "чинк", "узкоглаз", "русня", "rusnia", "чурк", "нерусь", "пендос", "пиндос", "москаль",}); // Political words.
+        Add({"жид", "хохл", "хохол", "hohol", "hohl", "jid", "чинк", "узкоглаз", "русня", "rusnia", "чурк", "нерусь", "пендос", "пиндос", "москаль"}); // Political words.
         Add("мраз");
         Add("пиздабол");
-
-        
     }
 
     void Add(string[] word)
